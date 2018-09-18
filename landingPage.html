@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Link CSS file -->
+    <link rel="stylesheet" href="./landingPage.css">
+    <!-- Import Bootsrap 4 -->
+    <link 
+        rel="stylesheet" 
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" 
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" 
+        crossorigin="anonymous">
+    <!-- Import Abril Fatface Font -->
+    <link href="https://fonts.googleapis.com/css?family=Abril+Fatface" rel="stylesheet">
+    <title>Graph Opus</title>
+</head>
+<body>
+    <!-- Bootsrap Dependencies -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" id="navbarTitle" href="#">Graph Opus <span id="plotText">Plot Shakespeare Online</span></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <div class="navbar-nav ml-auto">
+              <a class="nav-item nav-link" href="#">About</a>
+              <a class="nav-item nav-link" href="#">Articles</a>
+              <a class="nav-item nav-link" href="#">Pricing</a>
+          </div>
+        </div>
+      </nav>
+
+    <div class="bodyContainer">
+    <!-- Middle Section -->
+
+        <div class="middle_section">
+            <div class="row">
+                <div class="col-3 plot">
+                    <img src="./images/img1.png" alt="Shakespeare Image 1">
+                </div>
+                <div class="col-5 productOverview">
+                    <!-- <h5>&mdash; Graph the trajectories of 34 Shakespearean plays &mdash;</h5> -->
+                    <h5> Graph the trajectories of 34 Shakespearean plays </h5>
+                    <h5> Create events by assigning a weight to the synopses </h5>
+                    <h5> Get a graph of your analysis and your Role Ranking </h5>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-3 form_container">
+                    <div class="reg_form">
+                        <h3>Register</h3>
+                        <form>
+                            <input type="email" id="reg_email" name="reg_email" placeholder="      email">
+                            <button type="submit" id="reg_submit">Go!</button>
+                        </form>
+                    </div>
+                    <div class="login_form">
+                        <h3>Login</h3>
+                        <form>
+                            <input type="email" id="login_email" name="login_email" placeholder="      email"><br>
+                            <input type="password" id="login_password" name="login_password" placeholder="      password">
+                            <button type="submit" id="login_submit">Go!</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- <div class="middle_section">
+            <div class="plot">
+                <img src="./images/img1.png" alt="Shakespeare Image 1">
+            </div>
+            <div class="productOverview">
+                <h5>&mdash; Graph the trajectories of 34 Shakespearean plays &mdash;</h5>
+                <h5>&mdash; Create events by assigning a weight to the lines &mdash;</h5>
+                <h5>&mdash; Get a graph of your analysis and your Role Ranking &mdash;</h5>
+            </div>
+            <div class="form_container">
+                <div class="reg_form">
+                    <h3>Register</h3>
+                    <form>
+                        <input type="email" id="reg_email" name="reg_email" placeholder="      email">
+                        <button type="submit" id="reg_submit">Go!</button>
+                    </form>
+                </div>
+                <div class="login_form">
+                    <h3>Login</h3>
+                    <form>
+                        <input type="email" id="login_email" name="login_email" placeholder="      email"><br>
+                        <input type="password" id="login_password" name="login_password" placeholder="      password">
+                        <button type="submit" id="login_submit">Go!</button>
+                    </form>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Bottom Section --> 
+
+
+        <div class="row bottom_section">
+            <div class="col-5 instructions">
+                <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/89Oc1UE7SS4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
+                <iframe src="https://www.youtube.com/embed/89Oc1UE7SS4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div class="col-7 playsListContainer">
+                <div class="row">
+                    <h3 id="availablePlaysTitle">Available Plays</h3>
+                </div>
+                <div class="row playListBlock">
+                    <div class="col playList">
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                        </ul>
+                    </div>
+                    <div class="col playList">
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                        </ul>
+                    </div>
+                    <div class="col playList">
+                        <ul>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                            <li>Lorem ipsum dolor sit amet</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+        <!-- <div class="bottom_section">
+            <div class="instructions">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/89Oc1UE7SS4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            </div>
+            <div class="playsListContainer">
+                <h3>Available Plays</h3>
+                <div class="playListBlock">
+                    <ul class="playList">
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                    </ul>
+                    <ul class="playList">
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                    </ul>
+                    <ul class="playList">
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                        <li>Lorem ipsum dolor sit amet</li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Footer -->
+        <div class="footer">
+            <h6>Graph Opus US &copy;2018</h6>
+        </div>
+    </div>
+
+</body>
+</html>
