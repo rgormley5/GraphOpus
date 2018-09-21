@@ -30,9 +30,25 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <div class="navbar-nav ml-auto">
-              <a class="nav-item nav-link" href="#">About</a>
-              <a class="nav-item nav-link" href="#">Articles</a>
-              <a class="nav-item nav-link" href="#">Pricing</a>
+                <a class="nav-item nav-link" href="#">About</a>
+                <!-- <a class="nav-item nav-link" href="#">Articles</a> -->
+                <!-- <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Articles</a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">One</a>
+                        <a class="dropdown-item" href="#">Two</a>
+                        <a class="dropdown-item" href="#">Three</a>
+                    </div> -->
+                <div class="nav-item nav-link dropdown">
+                    <a data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Articles
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
+                <a class="nav-item nav-link" href="#">Pricing</a>
           </div>
         </div>
       </nav>
@@ -42,17 +58,17 @@
 
         <div class="middle_section">
             <div class="row">
-                <div class="col-3 plot">
+                <div class="col-md-4 col-lg-3 plot">
                     <img src="./images/img1.png" alt="Shakespeare Image 1">
                 </div>
-                <div class="col-5 productOverview">
+                <div class="col-md-8 col-lg-5 align-self-center productOverview">
                     <!-- <h5>&mdash; Graph the trajectories of 34 Shakespearean plays &mdash;</h5> -->
-                    <h5> Graph the trajectories of 34 Shakespearean plays </h5>
-                    <h5> Define events by assigning a weight to the synopses </h5>
-                    <h5> Create a graph of your analysis and your Role Ranking </h5>
+                    <h5 class="text1"> Graph the trajectories of 34 Shakespearean plays </h5>
+                    <h5 class="text1"> Define events by assigning a weight to the synopses </h5>
+                    <h5 class="text1"> Create a graph of your analysis and your Role Ranking </h5>
                 </div>
-                <div class="col-1"></div>
-                <div class="col-3 form_container">
+                <div class="col-lg-1"></div>
+                <div class="col-md-4 col-lg-3 form_container">
                     <div class="reg_form">
                         <h3>Register</h3>
                         <form>
@@ -105,13 +121,13 @@
 
 
         <div class="row bottom_section">
-            <div class="col-5 instructions">
+            <div class="col-4 instructions">
                 <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/89Oc1UE7SS4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
                 <iframe src="https://www.youtube.com/embed/89Oc1UE7SS4" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
             </div>
-            <div class="col-7 playsListContainer">
+            <div class="col-8 playsListContainer">
                 <div class="row">
-                    <h3 id="availablePlaysTitle">Available Plays</h3>
+                    <h3 class="col" id="availablePlaysTitle">Available Plays</h3>
                 </div>
                 <div class="row playListBlock">
                     <div class="col playList">
